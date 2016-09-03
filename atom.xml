@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Aseoe&#39;S BLOG</title>
-  <subtitle>专注互联网前沿技术</subtitle>
+  <title>Aseoe&#39;s BLOG</title>
+  <subtitle>Web前端开发技术博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.aseoe.com/"/>
-  <updated>2016-08-24T15:44:19.329Z</updated>
+  <updated>2016-09-03T06:18:23.000Z</updated>
   <id>http://blog.aseoe.com/</id>
   
   <author>
@@ -16,29 +16,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://blog.aseoe.com/posts/uncategorized/hello-world.html"/>
-    <id>http://blog.aseoe.com/posts/uncategorized/hello-world.html</id>
-    <published>2016-08-24T15:44:19.329Z</published>
-    <updated>2016-08-24T15:44:19.329Z</updated>
+    <title>前端开发学习教程指南</title>
+    <link href="http://blog.aseoe.com/posts/frontend/front-end-guide.html"/>
+    <id>http://blog.aseoe.com/posts/frontend/front-end-guide.html</id>
+    <published>2016-09-03T05:05:02.000Z</published>
+    <updated>2016-09-03T06:18:23.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<h1 id="前端开发学习教程指南"><a href="#前端开发学习教程指南" class="headerlink" title="前端开发学习教程指南"></a>前端开发学习教程指南</h1><blockquote>
+<p>本文主要讲述了什么是前端开发以及前端开发学什么，旨在分享一些前端学习教程及一些相关的前端知识资料等，如有不当之处，还请指教。</p>
+</blockquote>
+<h3 id="什么是前端开发"><a href="#什么是前端开发" class="headerlink" title="什么是前端开发"></a>什么是前端开发</h3><p><strong>前端开发</strong>是协调前端设计师、后端程序员实现网站页面或程序界面，优化交互体验的一个职位，详情查看<a href="http://www.aseoe.com/special/webnothing/" target="_blank" rel="external">什么是前端开发</a>专题。</p>
+<h3 id="前端开发学什么"><a href="#前端开发学什么" class="headerlink" title="前端开发学什么"></a>前端开发学什么</h3><p>一般来说，前端开发入门必须要要掌握<code>html</code>、<code>css</code>、<code>javascript</code>、<code>jquery</code>等，之后学习<code>html5</code>、<code>css3</code>以及一些框架如<code>bootstrap</code>、<code>nodejs</code>、<code>angularjs</code>等，这里只要简要概述，详情查看<a href="http://www.aseoe.com/special/webwhat/" target="_blank" rel="external">前端开发学什么</a>专题。</p>
+<a id="more"></a>
+<h3 id="前端知识点概述"><a href="#前端知识点概述" class="headerlink" title="前端知识点概述"></a>前端知识点概述</h3><p>主要是对javascript、jquery的一些核心知识点进行概述，如javascript的语句、函数、数组、字符串、对象模型、作用域等，由于篇幅较长，还是通过专题的形式。<a href="http://www.aseoe.com/special/webadvance/" target="_blank" rel="external">javascript与jquery知识点</a></p>
+<h3 id="前端一些资源分享"><a href="#前端一些资源分享" class="headerlink" title="前端一些资源分享"></a>前端一些资源分享</h3><p>这里总结一些前端学习要用到的资料，<a href="http://www.aseoe.com/manual/" target="_blank" rel="external">前端api在线手册</a>（也有离线手册下载地址）、<a href="http://www.aseoe.com/webook/" target="_blank" rel="external">前端书籍集锦</a> 、<a href="http://www.aseoe.com/mst/" target="_blank" rel="external">前端面试题</a> 、<a href="http://www.aseoe.com/gongju/" target="_blank" rel="external">前端工具箱</a> 、<a href="http://ask.aseoe.com" target="_blank" rel="external">前端问答社区</a>可以互动交流。</p>
+<h3 id="前端技术专题"><a href="#前端技术专题" class="headerlink" title="前端技术专题"></a>前端技术专题</h3><p>为了方便学习，收集整理了一些技术专题与大家分享，内容涵盖较多，请耐心学习。专题地址:<a href="http://www.aseoe.com/special/" target="_blank" rel="external">http://www.aseoe.com/special/</a> 专题内容会不断持续更新，敬请关注。</p>
+<h3 id="分享一些前端好文章"><a href="#分享一些前端好文章" class="headerlink" title="分享一些前端好文章"></a>分享一些前端好文章</h3><hr>
+<blockquote>
+<ol>
+<li><a href="http://www.aseoe.com/special/webstart/" target="_blank" rel="external"> Web前端开发学习路径图</a> </li>
+<li><a href="http://www.aseoe.com/show-26-873-1.html" target="_blank" rel="external">写给想成为前端工程师的同学们</a></li>
+<li><a href="http://www.aseoe.com/show-28-830-1.html" target="_blank" rel="external">前端开发人员必须了解的七大技能图谱</a></li>
+<li><a href="http://www.aseoe.com/show-28-650-1.html" target="_blank" rel="external">网页前端学习总结分享</a></li>
+<li><a href="http://www.aseoe.com/show-29-296-1.html" target="_blank" rel="external">如何科学合理得运用一天的时间</a></li>
+<li><a href="http://www.aseoe.com/show-41-631-1.html" target="_blank" rel="external">Web前端性能优化</a></li>
+</ol>
+</blockquote>
+<h4 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h4><blockquote>
+<p>前端的东西比较多而杂，入门容易，要想学好必须下足功夫，多写多练多做。<br>更多前端学习资料，请关注<strong><a href="http://www.aseoe.com/" target="_blank" rel="external">爱思资源网</a></strong>，专注Web前端开发</p>
+<p>爱思资源网：<a href="http://www.aseoe.com/" target="_blank" rel="external">http://www.aseoe.com/</a><br>前端交流千人群：<a href="http://wp.qq.com/wpa/qunwpa?idkey=b6e45142574fb4f4d2a2fc3711e2f84f7108a24e2abc7c617caaa1e7bd8b2295" target="_blank" rel="external">立即加入</a></p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      本文主要讲述了什么是前端开发以及前端开发学什么，旨在分享一些前端学习教程及一些相关的前端知识资料等。
     
     </summary>
     
+      <category term="前端" scheme="http://blog.aseoe.com/categories/frontend/"/>
+    
+    
+      <category term="web" scheme="http://blog.aseoe.com/tags/web/"/>
     
   </entry>
   
