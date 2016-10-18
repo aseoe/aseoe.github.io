@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.aseoe.com//404.html</loc>
+    
+    <lastmod>2016-10-18T10:13:40.839Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.aseoe.com/posts/frontend/front-end-guide.html</loc>
     
     <lastmod>2016-09-03T07:07:55.000Z</lastmod>
