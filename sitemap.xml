@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.aseoe.com/posts/life/hexo-my-blog.html</loc>
+    
+    <lastmod>2016-10-19T03:22:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.aseoe.com/errpage/404.html</loc>
     
     <lastmod>2016-10-18T11:09:49.000Z</lastmod>

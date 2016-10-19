@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.aseoe.com/"/>
-  <updated>2016-09-03T07:07:55.000Z</updated>
+  <updated>2016-10-19T03:22:23.000Z</updated>
   <id>http://blog.aseoe.com/</id>
   
   <author>
@@ -14,6 +14,80 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用hexo搭建静态博客</title>
+    <link href="http://blog.aseoe.com/posts/life/hexo-my-blog.html"/>
+    <id>http://blog.aseoe.com/posts/life/hexo-my-blog.html</id>
+    <published>2016-10-18T14:05:02.000Z</published>
+    <updated>2016-10-19T03:22:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用hexo搭建静态博客"><a href="#使用hexo搭建静态博客" class="headerlink" title="使用hexo搭建静态博客"></a>使用hexo搭建静态博客</h1><blockquote>
+<p><strong>Hexo</strong> 是一款基于Node.js、快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。作者是来自台湾的<code>@tommy351</code>   <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">官网</a></p>
+</blockquote>
+<p><strong>hexo</strong>是一个博客程序，拥有一个简单的服务器（可以用来当简单的动态博客使用），也有生成器，生成的静态文件可以一键部署到Github Pages上，也可以部署到任意静态文件服务器上面。</p>
+<p>下面一步一步地说怎么用hexo搭建一个博客。</p>
+<a id="more"></a>
+<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><h3 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装Node</h3><p>作用：用来生成静态页面的<br>到Node.js官网下载相应平台的最新版本，一路安装即可。</p>
+<h3 id="安装Git（必须）"><a href="#安装Git（必须）" class="headerlink" title="安装Git（必须）"></a>安装Git（必须）</h3><p>作用：把本地的hexo内容提交到github上去.</p>
+<h3 id="安装Xcode-自带有Git"><a href="#安装Xcode-自带有Git" class="headerlink" title="安装Xcode(自带有Git)"></a>安装Xcode(自带有Git)</h3><h3 id="申请GitHub"><a href="#申请GitHub" class="headerlink" title="申请GitHub"></a>申请GitHub</h3><p>作用：是用来做博客的远程创库、域名、服务器之类的。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Node和Git都安装好后,首先创建一个文件夹,如hexo,用户存放hexo的配置文件,然后进入hexo里安装Hexo。</p>
+<p>执行如下命令安装hexo</p>
+<p><code>sudo npm install -g hexo</code></p>
+<p>然后，执行init命令初始化hexo：</p>
+<p><code>hexo init</code></p>
+<p>至此，全部安装工作已经完成！blog就是你的博客根目录，所有的操作都在里面进行。</p>
+<p><strong>生成静态页面</strong></p>
+<p><code>hexo generate</code>  ( hexo g 亦可)</p>
+<p><strong>本地启动</strong></p>
+<p>启动本地服务，进行文章预览调试，命令：</p>
+<p><code>hexo server</code></p>
+<p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+<p><em>请使用高级浏览器，否则可能…你懂的！</em></p>
+<h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h3><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo n #写文章</div><div class="line">hexo g #生成</div><div class="line">hexo d #部署 # 可与hexo g合并为 hexo d -g</div></pre></td></tr></table></figure>
+<p>执行new命令，生成指定名称的文章至hexo\source_posts\postName.md。</p>
+<blockquote>
+<p>hexo new [layout] “postName” #新建文章</p>
+</blockquote>
+<p><em>其中layout是可选参数，默认值为post。有哪些layout呢，请到scaffolds目录下查看，这些文件名称就是layout名称。当然你可以添加自己的layout，方法就是添加一个文件即可，同时你也可以编辑现有的layout，比如post的layout默认是hexo\scaffolds\post.md</em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title: &#123; &#123; title &#125; &#125;</div><div class="line">date: &#123; &#123; date &#125; &#125;</div><div class="line">tags:</div><div class="line">---</div></pre></td></tr></table></figure>
+<p><em>请注意，大括号与大括号之间我多加了个空格，否则会被转义，不能正常显示。</em></p>
+<p>我想添加categories，以免每次手工输入，只需要修改这个文件添加一行，如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">title: &#123; &#123; title &#125; &#125;</div><div class="line">date: &#123; &#123; date &#125; &#125;</div><div class="line">categories: </div><div class="line">tags: </div><div class="line">---</div></pre></td></tr></table></figure></p>
+<p><em>postName是md文件的名字，同时也出现在你文章的URL中，postName如果包含空格，必须用”将其包围，postName可以为中文。</em> ( 注意，所有文件：后面都必须有个空格，不然会报错。)</p>
+<p>看一下刚才生成的文件hexo\source_posts\postName.md，内容如下：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中</div><div class="line">date: 2016-10-18 20:30:16 #文章生成时间，一般不改，当然也可以任意修改</div><div class="line">categories: #文章分类目录，可以为空，注意:后面有个空格</div><div class="line">tags: #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格</div><div class="line">---</div><div class="line">这里开始使用markdown格式输入你的正文。</div></pre></td></tr></table></figure></p>
+<p>接下来，你就可以用喜爱的编辑器尽情书写你的文章。关于markdown语法，可以参考<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">Markdown简明语法</a></p>
+<p><strong>fancybox</strong><br>可能有人对这个Reading页面中图片的fancybox效果感兴趣，这个是怎么做的呢。<br>很简单，只需要在你的文章*.md文件的头上添加photos项即可，然后一行行添加你要展示的照片：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">layout: photo</div><div class="line">title: 我的阅历</div><div class="line">date: <span class="number">2016</span><span class="number">-10</span><span class="number">-18</span> <span class="number">21</span>:<span class="number">00</span>:<span class="number">50</span></div><div class="line">tags: [hexo]</div><div class="line">photos:</div><div class="line">- http:<span class="comment">//www.aseoe.com/uploadfile/2016/0619/20160619011343311.jpg</span></div><div class="line">- http:<span class="comment">//www.aseoe.com/uploadfile/2016/0619/20160619012200629.jpg</span></div></pre></td></tr></table></figure>
+<p>经过测试，文件头上的layout: photo可以省略。</p>
+<p>不想每次都手动添加怎么办？同样的，打开您的hexo\scaffolds\photo.md<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">layout: &#123; &#123; layout &#125; &#125;</div><div class="line">title: &#123; &#123; title &#125; &#125;</div><div class="line">date: &#123; &#123; date &#125; &#125;</div><div class="line">tags: </div><div class="line">photos: </div><div class="line">- </div><div class="line">---</div></pre></td></tr></table></figure></p>
+<p>然后每次可以执行带layout的new命令生成照片文章：</p>
+<p><code>hexo new photo &quot;photoPostName&quot; #新建照片文章</code></p>
+<p><strong>description</strong><br>markdown文件头中也可以添加description，以覆盖全局配置文件中的description内容，请参考下文_config.yml的介绍。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">title: hexo你的博客</div><div class="line">date: <span class="number">2016</span><span class="number">-10</span><span class="number">-18</span> <span class="number">21</span>:<span class="number">30</span>:<span class="number">22</span></div><div class="line">categories: <span class="keyword">default</span></div><div class="line">tags: [hexo]</div><div class="line">description: 你对本页的描述</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>hexo默认会处理全部markdown和html文件，如果不想让hexo处理你的文件，可以在文件头中加入layout: false。</p>
+<p><strong>文章摘要</strong><br>在需要显示摘要的地方添加如下代码即可：</p>
+<blockquote>
+<p>以上是摘要<br><code>&lt;!--more--&gt;</code><br>以下是余下全文<br>more以上内容即是文章摘要，在主页显示，more以下内容点击『&gt; Read More』链接打开全文才显示。</p>
+</blockquote>
+<p>hexo中所有文件的编码格式均是UTF-8。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用hexo搭建静态博客&quot;&gt;&lt;a href=&quot;#使用hexo搭建静态博客&quot; class=&quot;headerlink&quot; title=&quot;使用hexo搭建静态博客&quot;&gt;&lt;/a&gt;使用hexo搭建静态博客&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hexo&lt;/strong&gt; 是一款基于Node.js、快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。作者是来自台湾的&lt;code&gt;@tommy351&lt;/code&gt;   &lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;hexo&lt;/strong&gt;是一个博客程序，拥有一个简单的服务器（可以用来当简单的动态博客使用），也有生成器，生成的静态文件可以一键部署到Github Pages上，也可以部署到任意静态文件服务器上面。&lt;/p&gt;
+&lt;p&gt;下面一步一步地说怎么用hexo搭建一个博客。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://blog.aseoe.com/categories/life/"/>
+    
+    
+      <category term="hexo" scheme="http://blog.aseoe.com/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>前端开发学习教程指南</title>
